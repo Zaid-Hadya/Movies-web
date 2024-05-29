@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Add Movie</title>
+    <link rel="stylesheet" href="styles2.css" />
+</head>
+<body>
+
+<!-- Menu -->
+<div class="menu">
+    <a href="index.html" class="login-button">Home</a>
+    <a href="createMovie.html" class="login-button">Add a Movie</a>
+</div>
+
+<br><br><br><br><br><br>
+<form id="movieForm" method="post" action="/connect.js"> 
+    <h2>Movie Details</h2>
+    
+    <label for="Title">Title</label>
+    <input type="text" id="Title" name="Title" min="1" required>
+
+    <label for="image_url">Image URL</label>
+    <input type="text" id="image_url" name="image_url" min="1">
+    
+    <label for="release_date">Release Date</label>
+    <input type="date" id="release_date" name="release_date" required>
+       
+    <label for="Description">Description</label>
+    <textarea id="Description" name="Description" rows="4" cols="50">Enter text here...</textarea>
+  
+    <br><br><br>
+    <input type="submit" value="Add Movie">
+</form>
+
+<script src="create.js"></script>
+
+
+</body>
+</html>
